@@ -1,0 +1,507 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Created By Deepak Ray, 26/04/2019    -->
+<!-- PeopleSoft FSCM Environment Configuration -->
+<Configuration>
+   <Application Name="Master">
+      <!-- DEVELOPMENT ENVIRONMENT -->
+      <Environment Name="DEV" Descr="Master Development">
+		 <Database>
+			<Name>PSF92DEV</Name>
+			<User>AOPSE</User>
+		 </Database>
+         <Server Name="VMPSFSCMDEV02" Role="midtier">
+			<PSHOME>E:\PS_HOME\8.56.15</PSHOME>
+			<PSCFGHOME>E:\PS_CFG_HOME\8.56.15</PSCFGHOME>
+			<PSAPPHOME>\\gb.bupagroup.com\app\VHCPSAPP01\PS_APP_HOME\FSCM\DEV</PSAPPHOME>
+            <Domain Type="app">
+				<Name>PSF92DEV</Name>
+				<PUBSUB>Y</PUBSUB>
+				<REN>Y</REN>
+			</Domain>
+            <Domain Type="prcs">
+				<Name>PSF92DEV</Name>
+				<MasterScheduler>Y</MasterScheduler>
+			</Domain>
+            <Domain Type="web">
+				<Name>peoplesoft-PIA</Name>
+			</Domain>
+			<SMTP>smtpuat.internal.bupa.co.uk</SMTP>
+         </Server>
+      </Environment>
+      <!-- SYSTEM TEST ENVIRONMENT -->
+      <Environment Name="STS" Descr="Master System Test">
+		 <Database>
+			<Name>PSF92STS</Name>
+			<User>AOPSE</User>
+		 </Database>
+         <Server Name="VMPSFSCMSTS01" Role="midtier">
+			<PSHOME>E:\PS_HOME\8.56.15</PSHOME>
+			<PSCFGHOME>E:\PS_CFG_HOME\8.56.15</PSCFGHOME>
+			<PSAPPHOME>\\gb.bupagroup.com\app\VHCPSAPP01\PS_APP_HOME\FSCM\STS</PSAPPHOME>
+            <Domain Type="app">
+				<Name>PSF92STS</Name>
+				<PUBSUB>Y</PUBSUB>
+				<REN>Y</REN>
+			</Domain>
+            <Domain Type="prcs">
+				<Name>PSF92STS</Name>
+				<MasterScheduler>Y</MasterScheduler>
+			</Domain>
+            <Domain Type="web">
+				<Name>peoplesoft-PIA</Name>
+			</Domain>
+			<SMTP>smtpuat.internal.bupa.co.uk</SMTP>
+         </Server>
+      </Environment>
+      <!-- SUPPORT ENVIRONMENT -->
+      <Environment Name="PAR" Descr="Master Support">
+		 <Database>
+			<Name>PSF92SUP</Name>
+			<User>AOPSE</User>
+		 </Database>
+         <Server Name="VMPSFSCMPAR01" Role="midtier">
+		    <PSHOME>E:\PS_HOME\8.56.15</PSHOME>
+			<PSCFGHOME>E:\PS_CFG_HOME\8.56.15</PSCFGHOME>
+			<PSAPPHOME>\\gb.bupagroup.com\app\VHCPSAPP01\PS_APP_HOME\FSCM\PAR</PSAPPHOME>
+            <Domain Type="app">
+				<Name>PSF92PAR</Name>
+				<PUBSUB>Y</PUBSUB>
+				<REN>Y</REN>
+			</Domain>
+            <Domain Type="prcs">
+				<Name>PSF92PAR</Name>
+				<MasterScheduler>Y</MasterScheduler>
+			</Domain>
+            <Domain Type="web">
+				<Name>peoplesoft-PIA</Name>
+			</Domain>
+			<SMTP>smtpuat.internal.bupa.co.uk</SMTP>
+         </Server>
+      </Environment>
+      <!-- CAP ENVIRONMENT -->
+      <Environment Name="CAP" Descr="CG Environment">
+		 <Database>
+			<Name>PSF92CAP</Name>
+			<User>AOPSE</User>
+		 </Database>
+         <Server Name="VMPSFSCMSND01" Role="midtier">
+			<PSHOME>E:\PS_HOME\8.56.15</PSHOME>
+			<PSCFGHOME>E:\PS_CFG_HOME\8.56.15</PSCFGHOME>
+			<PSAPPHOME>\\gb.bupagroup.com\app\VHCPSAPP01\PS_APP_HOME\FSCM\CAP</PSAPPHOME>
+            <Domain Type="app">
+				<Name>PSF92CAP</Name>
+				<PUBSUB>Y</PUBSUB>
+				<REN>Y</REN>
+			</Domain>
+            <Domain Type="prcs">
+				<Name>PSF92CAP</Name>
+				<MasterScheduler>Y</MasterScheduler>
+			</Domain>
+            <Domain Type="web">
+				<Name>peoplesoft-PIA</Name>
+			</Domain>
+			<SMTP>smtpuat.internal.bupa.co.uk</SMTP>
+         </Server>
+      </Environment>
+      <!-- UAT ENVIRONMENT -->
+      <Environment Name="UAT" Descr="Master UAT">
+		 <Database>
+			<Name>PSF92UAT</Name>
+			<User>AOPSE</User>
+		 </Database>
+         <Server Name="VMPSFSCMUATA03" Role="app">
+			<PSHOME>E:\PS_HOME\8.56.15</PSHOME>
+			<PSCFGHOME>E:\PS_CFG_HOME\8.56.15</PSCFGHOME>
+			<PSAPPHOME>\\gb.bupagroup.com\app\VHCPSAPP01\PS_APP_HOME\FSCM\UAT</PSAPPHOME>
+            <Domain Type="app">
+				<Name>PSF92UA1</Name>
+				<PUBSUB>N</PUBSUB>
+				<REN>Y</REN>
+			</Domain>
+			<Domain Type="app">
+				<Name>PSF92UA2</Name>
+				<PUBSUB>N</PUBSUB>
+				<REN>N</REN>
+			</Domain>
+            <Domain Type="prcs" />
+            <Domain Type="web" />
+			<SMTP>smtpuat.internal.bupa.co.uk</SMTP>
+         </Server>
+         <Server Name="VMPSFSCMUATA04" Role="app">
+			<PSHOME>E:\PS_HOME\8.56.15</PSHOME>
+			<PSCFGHOME>E:\PS_CFG_HOME\8.56.15</PSCFGHOME>
+			<PSAPPHOME>\\gb.bupagroup.com\app\VHCPSAPP01\PS_APP_HOME\FSCM\UAT</PSAPPHOME>
+            <Domain Type="app">
+				<Name>PSF92UA3</Name>
+				<PUBSUB>N</PUBSUB>
+				<REN>Y</REN>
+			</Domain>
+			<Domain Type="app">
+				<Name>PSF92UA4</Name>
+				<PUBSUB>N</PUBSUB>
+				<REN>N</REN>
+			</Domain>
+            <Domain Type="prcs" />
+            <Domain Type="web" />
+			<SMTP>smtpuat.internal.bupa.co.uk</SMTP>
+         </Server>
+         <Server Name="VMPSFSCMUATP03" Role="midtier">
+			<PSHOME>E:\PS_HOME\8.56.15</PSHOME>
+			<PSCFGHOME>E:\PS_CFG_HOME\8.56.15</PSCFGHOME>
+			<PSAPPHOME>\\gb.bupagroup.com\app\VHCPSAPP01\PS_APP_HOME\FSCM\UAT</PSAPPHOME>
+            <Domain Type="app">
+				<Name>PSF92UA5</Name>
+				<PUBSUB>Y</PUBSUB>
+				<REN>N</REN>
+			</Domain>
+			<Domain Type="prcs">
+				<Name>PSF92UP1</Name>
+				<MasterScheduler>Y</MasterScheduler>
+			</Domain>
+			<Domain Type="prcs">
+				<Name>PSF92UP2</Name>
+				<MasterScheduler>Y</MasterScheduler>
+			</Domain>
+            <Domain Type="web">
+				<Name>peoplesoft-PIA</Name>
+			</Domain>
+			<SMTP>smtpuat.internal.bupa.co.uk</SMTP>
+         </Server>
+         <Server Name="VMPSFSCMUATP04" Role="appbatch">
+			<PSHOME>E:\PS_HOME\8.56.15</PSHOME>
+			<PSCFGHOME>E:\PS_CFG_HOME\8.56.15</PSCFGHOME>
+			<PSAPPHOME>\\gb.bupagroup.com\app\VHCPSAPP01\PS_APP_HOME\FSCM\UAT</PSAPPHOME>
+            <Domain Type="app">
+				<Name>PSF92UA6</Name>
+				<PUBSUB>Y</PUBSUB>
+				<REN>N</REN>
+			</Domain>
+			<Domain Type="prcs">
+				<Name>PSF92UP3</Name>
+				<MasterScheduler>Y</MasterScheduler>
+			</Domain>
+			<Domain Type="prcs">
+				<Name>PSF92UP4</Name>
+				<MasterScheduler>Y</MasterScheduler>
+			</Domain>
+            <Domain Type="web" />
+			<SMTP>smtpuat.internal.bupa.co.uk</SMTP>
+         </Server>
+         <Server Name="VMPSFSCMUATP05" Role="prcs">
+			<PSHOME>E:\PS_HOME\8.56.15</PSHOME>
+			<PSCFGHOME>E:\PS_CFG_HOME\8.56.15</PSCFGHOME>
+			<PSAPPHOME>\\gb.bupagroup.com\app\VHCPSAPP01\PS_APP_HOME\FSCM\UAT</PSAPPHOME>
+            <Domain Type="app" />
+			<Domain Type="prcs">
+				<Name>PSF92UP5</Name>
+				<MasterScheduler>N</MasterScheduler>
+			</Domain>
+			<Domain Type="prcs">
+				<Name>PSF92UP6</Name>
+				<MasterScheduler>N</MasterScheduler>
+			</Domain>
+            <Domain Type="web" />
+			<SMTP>smtpuat.internal.bupa.co.uk</SMTP>
+         </Server>
+         <Server Name="VMPSFSCMSND03" Role="prcs">
+			<PSHOME>E:\PS_HOME\8.56.15</PSHOME>
+			<PSCFGHOME>E:\PS_CFG_HOME\8.56.15</PSCFGHOME>
+			<PSAPPHOME>\\gb.bupagroup.com\app\VHCPSAPP01\PS_APP_HOME\FSCM\UAT</PSAPPHOME>
+            <Domain Type="app" />
+			<Domain Type="prcs">
+				<Name>PSF92UP7</Name>
+				<MasterScheduler>N</MasterScheduler>
+			</Domain>
+			<Domain Type="prcs">
+				<Name>PSF92UP8</Name>
+				<MasterScheduler>N</MasterScheduler>
+			</Domain>
+            <Domain Type="web" />
+			<SMTP>smtpuat.internal.bupa.co.uk</SMTP>
+         </Server>
+		 <Server Name="VMPSFSCMUATW03" Role="pia">
+			<PSHOME>E:\PS_HOME\8.56.15</PSHOME>
+			<PSCFGHOME>E:\PS_CFG_HOME\8.56.15</PSCFGHOME>
+			<PSAPPHOME>\\gb.bupagroup.com\app\VHCPSAPP01\PS_APP_HOME\FSCM\UAT</PSAPPHOME>
+            <Domain Type="app" />
+			<Domain Type="prcs" />
+			<Domain Type="web">
+				<Name>peopleSoft-weblogicadmin</Name>
+			</Domain>
+            <Domain Type="web">
+				<Name>peopleSoft-PIA1</Name>
+			</Domain>
+			<Domain Type="web">
+				<Name>peopleSoft-PIA2</Name>
+			</Domain>
+			<SMTP>smtpuat.internal.bupa.co.uk</SMTP>
+         </Server>
+		 <Server Name="VMPSFSCMUATW04" Role="pia">
+			<PSHOME>E:\PS_HOME\8.56.15</PSHOME>
+			<PSCFGHOME>E:\PS_CFG_HOME\8.56.15</PSCFGHOME>
+			<PSAPPHOME>\\gb.bupagroup.com\app\VHCPSAPP01\PS_APP_HOME\FSCM\UAT</PSAPPHOME>
+            <Domain Type="app" />
+			<Domain Type="prcs" />
+            <Domain Type="web">
+				<Name>peopleSoft-PIA3</Name>
+			</Domain>
+			<Domain Type="web">
+				<Name>peopleSoft-PIA4</Name>
+			</Domain>
+			<SMTP>smtpuat.internal.bupa.co.uk</SMTP>
+         </Server>
+		 <Server Name="VMPSFSCMUATARC1" Role="midtier">
+			<PSHOME>E:\PS_HOME\8.56.15</PSHOME>
+			<PSCFGHOME>E:\PS_CFG_HOME\8.56.15</PSCFGHOME>
+			<PSAPPHOME>\\gb.bupagroup.com\app\VHCPSAPP01\PS_APP_HOME\FSCM\UAT</PSAPPHOME>
+            <Domain Type="app">
+				<Name>PSF92ARC</Name>
+				<PUBSUB>N</PUBSUB>
+				<REN>N</REN>
+			</Domain>
+			<Domain Type="prcs">
+				<Name>ARCHIVE</Name>
+				<MasterScheduler>N</MasterScheduler>
+			</Domain>
+			<Domain Type="web">
+				<Name>peoplesoft-PIA</Name>
+			</Domain>
+			<SMTP>smtpuat.internal.bupa.co.uk</SMTP>
+         </Server>
+      </Environment>
+      <!-- PRODUCTION ENVIRONMENT -->
+      <Environment Name="PRD" Descr="Master PRD">
+		 <Database>
+			<Name>PSF92PRD</Name>
+			<User>AOPSE</User>
+		 </Database>
+         <Server Name="VMPSFSCMPRDA03" Role="app">
+			<PSHOME>E:\PS_HOME\8.56.15</PSHOME>
+			<PSCFGHOME>E:\PS_CFG_HOME\8.56.15</PSCFGHOME>
+			<PSAPPHOME>\\gb.bupagroup.com\app\VHCPSAPP01\PS_APP_HOME\FSCM\PRD</PSAPPHOME>
+            <Domain Type="app">
+				<Name>PSF92PA1</Name>
+				<PUBSUB>N</PUBSUB>
+				<REN>Y</REN>
+			</Domain>
+			<Domain Type="app">
+				<Name>PSF92PA2</Name>
+				<PUBSUB>N</PUBSUB>
+				<REN>N</REN>
+			</Domain>
+            <Domain Type="prcs" />
+            <Domain Type="web" />
+			<SMTP>smtp.internal.bupa.co.uk</SMTP>
+         </Server>
+         <Server Name="VMPSFSCMPRDA04" Role="app">
+			<PSHOME>E:\PS_HOME\8.56.15</PSHOME>
+			<PSCFGHOME>E:\PS_CFG_HOME\8.56.15</PSCFGHOME>
+			<PSAPPHOME>\\gb.bupagroup.com\app\VHCPSAPP01\PS_APP_HOME\FSCM\PRD</PSAPPHOME>
+            <Domain Type="app">
+				<Name>PSF92PA3</Name>
+				<PUBSUB>N</PUBSUB>
+				<REN>Y</REN>
+			</Domain>
+			<Domain Type="app">
+				<Name>PSF92PA4</Name>
+				<PUBSUB>N</PUBSUB>
+				<REN>N</REN>
+			</Domain>
+            <Domain Type="prcs" />
+            <Domain Type="web" />
+			<SMTP>smtp.internal.bupa.co.uk</SMTP>
+         </Server>
+         <Server Name="VMPSFSCMPRDP03" Role="midtier">
+			<PSHOME>E:\PS_HOME\8.56.15</PSHOME>
+			<PSCFGHOME>E:\PS_CFG_HOME\8.56.15</PSCFGHOME>
+			<PSAPPHOME>\\gb.bupagroup.com\app\VHCPSAPP01\PS_APP_HOME\FSCM\PRD</PSAPPHOME>
+            <Domain Type="app">
+				<Name>PSF92PA5</Name>
+				<PUBSUB>Y</PUBSUB>
+				<REN>N</REN>
+			</Domain>
+			<Domain Type="prcs">
+				<Name>PSF92PP1</Name>
+				<MasterScheduler>Y</MasterScheduler>
+			</Domain>
+			<Domain Type="prcs">
+				<Name>PSF92PP2</Name>
+				<MasterScheduler>Y</MasterScheduler>
+			</Domain>
+            <Domain Type="web">
+				<Name>peoplesoft-PIA</Name>
+			</Domain>
+			<SMTP>smtp.internal.bupa.co.uk</SMTP>
+         </Server>
+         <Server Name="VMPSFSCMPRDP04" Role="appbatch">
+			<PSHOME>E:\PS_HOME\8.56.15</PSHOME>
+			<PSCFGHOME>E:\PS_CFG_HOME\8.56.15</PSCFGHOME>
+			<PSAPPHOME>\\gb.bupagroup.com\app\VHCPSAPP01\PS_APP_HOME\FSCM\PRD</PSAPPHOME>
+            <Domain Type="app">
+				<Name>PSF92PA6</Name>
+				<PUBSUB>Y</PUBSUB>
+				<REN>N</REN>
+			</Domain>
+			<Domain Type="prcs">
+				<Name>PSF92PP3</Name>
+				<MasterScheduler>Y</MasterScheduler>
+			</Domain>
+			<Domain Type="prcs">
+				<Name>PSF92PP4</Name>
+				<MasterScheduler>Y</MasterScheduler>
+			</Domain>
+            <Domain Type="web" />
+			<SMTP>smtp.internal.bupa.co.uk</SMTP>
+         </Server>
+         <Server Name="VMPSFSCMPRDP05" Role="prcs">
+			<PSHOME>E:\PS_HOME\8.56.15</PSHOME>
+			<PSCFGHOME>E:\PS_CFG_HOME\8.56.15</PSCFGHOME>
+			<PSAPPHOME>\\gb.bupagroup.com\app\VHCPSAPP01\PS_APP_HOME\FSCM\PRD</PSAPPHOME>
+            <Domain Type="app" />
+			<Domain Type="prcs">
+				<Name>PSF92PP5</Name>
+				<MasterScheduler>N</MasterScheduler>
+			</Domain>
+			<Domain Type="prcs">
+				<Name>PSF92PP6</Name>
+				<MasterScheduler>N</MasterScheduler>
+			</Domain>
+            <Domain Type="web" />
+			<SMTP>smtp.internal.bupa.co.uk</SMTP>
+         </Server>
+         <Server Name="VMPSFSCMPRDP06" Role="prcs">
+			<PSHOME>E:\PS_HOME\8.56.15</PSHOME>
+			<PSCFGHOME>E:\PS_CFG_HOME\8.56.15</PSCFGHOME>
+			<PSAPPHOME>\\gb.bupagroup.com\app\VHCPSAPP01\PS_APP_HOME\FSCM\PRD</PSAPPHOME>
+            <Domain Type="app" />
+			<Domain Type="prcs">
+				<Name>PSF92PP7</Name>
+				<MasterScheduler>N</MasterScheduler>
+			</Domain>
+			<Domain Type="prcs">
+				<Name>PSF92PP8</Name>
+				<MasterScheduler>N</MasterScheduler>
+			</Domain>
+            <Domain Type="web" />
+			<SMTP>smtp.internal.bupa.co.uk</SMTP>
+         </Server>
+		 <Server Name="VMPSFSCMPRDW03" Role="pia">
+			<PSHOME>E:\PS_HOME\8.56.15</PSHOME>
+			<PSCFGHOME>E:\PS_CFG_HOME\8.56.15</PSCFGHOME>
+			<PSAPPHOME>\\gb.bupagroup.com\app\VHCPSAPP01\PS_APP_HOME\FSCM\PRD</PSAPPHOME>
+            <Domain Type="app" />
+			<Domain Type="prcs" />
+			<Domain Type="web">
+				<Name>peopleSoft-weblogicadmin</Name>
+			</Domain>
+            <Domain Type="web">
+				<Name>peopleSoft-PIA1</Name>
+			</Domain>
+			<Domain Type="web">
+				<Name>peopleSoft-PIA2</Name>
+			</Domain>
+			<SMTP>smtp.internal.bupa.co.uk</SMTP>
+         </Server>
+		 <Server Name="VMPSFSCMPRDW04" Role="pia">
+			<PSHOME>E:\PS_HOME\8.56.15</PSHOME>
+			<PSCFGHOME>E:\PS_CFG_HOME\8.56.15</PSCFGHOME>
+			<PSAPPHOME>\\gb.bupagroup.com\app\VHCPSAPP01\PS_APP_HOME\FSCM\PRD</PSAPPHOME>
+            <Domain Type="app" />
+			<Domain Type="prcs" />
+            <Domain Type="web">
+				<Name>peopleSoft-PIA3</Name>
+			</Domain>
+			<Domain Type="web">
+				<Name>peopleSoft-PIA4</Name>
+			</Domain>
+			<SMTP>smtp.internal.bupa.co.uk</SMTP>
+         </Server>
+		 <Server Name="VMPSFSCMPRDARC1" Role="midtier">
+			<PSHOME>E:\PS_HOME\8.56.15</PSHOME>
+			<PSCFGHOME>E:\PS_CFG_HOME\8.56.15</PSCFGHOME>
+			<PSAPPHOME>\\gb.bupagroup.com\app\VHCPSAPP01\PS_APP_HOME\FSCM\PRD</PSAPPHOME>
+            <Domain Type="app">
+				<Name>PSF92ARC</Name>
+				<PUBSUB>N</PUBSUB>
+				<REN>N</REN>
+			</Domain>
+			<Domain Type="prcs">
+				<Name>ARCHIVE</Name>
+				<MasterScheduler>N</MasterScheduler>
+			</Domain>
+			<Domain Type="web">
+				<Name>peoplesoft-PIA</Name>
+			</Domain>
+			<SMTP>smtp.internal.bupa.co.uk</SMTP>
+         </Server>
+      </Environment>
+   </Application>
+   <Application Name="SWIFT">
+		<Environment Name="DEV" Descr="SWIFT Development">
+		 <Database>
+			<Name>PSW92DEV</Name>
+			<User>AOPSE</User>
+		 </Database>
+         <Server Name="VMPSWFSCMDEV01" Role="midtier">
+			<PSHOME>E:\PS_HOME\PT8.56</PSHOME>
+			<PSCFGHOME>E:\PS_CFG_HOME\8.56.08</PSCFGHOME>
+			<PSAPPHOME>E:\PS_APP_HOME</PSAPPHOME>
+            <Domain Type="app">
+				<Name>PSW92DEV</Name>
+				<PUBSUB>Y</PUBSUB>
+				<REN>Y</REN>
+			</Domain>
+            <Domain Type="prcs">
+				<Name>PSW92DEV</Name>
+				<MasterScheduler>Y</MasterScheduler>
+			</Domain>
+            <Domain Type="web">
+				<Name>peoplesoft-PIA</Name>
+			</Domain>
+			<SMTP>smtpuat.internal.bupa.co.uk</SMTP>
+         </Server>
+		 </Environment>
+		 <Environment Name="IGT" Descr="SWIFT IGT">
+		 <Database>
+			<Name>PSW92IGT</Name>
+			<User>AOPSE</User>
+		 </Database>
+         <Server Name="VMPSWFSCMIGT01" Role="midtier">
+			<PSHOME>E:\PS_HOME\PT8.56</PSHOME>
+			<PSCFGHOME>E:\PS_CFG_HOME\8.56.08</PSCFGHOME>
+			<PSAPPHOME>E:\PS_APP_HOME</PSAPPHOME>
+            <Domain Type="app">
+				<Name>PSW92IGT</Name>
+				<PUBSUB>Y</PUBSUB>
+				<REN>Y</REN>
+			</Domain>
+            <Domain Type="prcs">
+				<Name>PSW92IGT</Name>
+				<MasterScheduler>Y</MasterScheduler>
+			</Domain>
+            <Domain Type="web">
+				<Name>peoplesoft-PIA</Name>
+			</Domain>
+			<SMTP>smtpuat.internal.bupa.co.uk</SMTP>
+         </Server>
+		 <Server Name="VMPSWFSCMSTS01" Role="midtier">
+			<PSHOME>E:\PS_HOME\PT8.56</PSHOME>
+			<PSCFGHOME>E:\PS_CFG_HOME\8.56.08</PSCFGHOME>
+			<PSAPPHOME>E:\PS_APP_HOME</PSAPPHOME>
+            <Domain Type="app">
+				<Name>PSW92STS</Name>
+				<PUBSUB>Y</PUBSUB>
+				<REN>Y</REN>
+			</Domain>
+            <Domain Type="prcs">
+				<Name>PSW92STS</Name>
+				<MasterScheduler>Y</MasterScheduler>
+			</Domain>
+            <Domain Type="web">
+				<Name>peoplesoft-PIA</Name>
+			</Domain>
+			<SMTP>smtpuat.internal.bupa.co.uk</SMTP>
+         </Server>
+      </Environment>
+   </Application>
+</Configuration>
